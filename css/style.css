@@ -1,0 +1,454 @@
+body {
+  background-image: url(../img/Background.png);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Navbar CSS */
+nav {
+  width: auto;
+  background-color: #162B32;
+  height: 50px;
+
+}
+
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+#navbarNav ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+  border-top: 0;
+  border-bottom: .3em solid;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+#navbarNav .active {
+  font-weight: bold;
+  text-shadow: 0px 3px 7px #ABABAB;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  height: 2.3rem;
+}
+
+.nav-bottom {
+  visibility: hidden;
+}
+
+.nav-side {
+  visibility: hidden;
+}
+
+/* penutup Navbar CSS */
+
+.jumbotron {
+  margin-top: 20px;
+}
+
+.jumbotron .container {
+  display: flex;
+}
+
+.jumbotron img {
+  width: 350px;
+  height: 350px;
+}
+
+.detailed-text {
+  padding-top: 5%;
+  padding-left: 3%;
+}
+
+.detailed-text h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.detailed-text h3 {
+  margin-top: -13px;
+  font-size: 1rem;
+}
+
+.detailed-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: -10px;
+  text-align: justify;
+}
+
+/* Penutup Jumbotron CSS */
+
+/* Project CSS */
+.project {
+  background-color: #525252;
+}
+
+.project h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  color: #525252;
+  margin: 0px 10px 20px 10px;
+  padding: 10px;
+}
+
+.card p {
+  text-align: justify;
+}
+
+/* Penutup Project CSS */
+
+/* Contact CSS */
+#contact {
+  background-color: #525252;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+#contact h1 {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact {
+  background-color: #6b6b6b;
+  color: rgb(252, 252, 252);
+  font-weight: bold;
+  margin: 0 auto;
+  width: 75%;
+  border-radius: 24px;
+}
+
+.contact .container {
+  width: 80%;
+  padding: 4%;
+}
+
+.contact .container label {
+  width: 147px;
+}
+
+.container .button .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.sosmed {
+  padding-top: 5px;
+}
+
+.sosmed .sosmed-link {
+  margin-top: -10px;
+  font-size: 1.9rem;
+  text-align: center;
+
+}
+
+.sosmed .sosmed-link a {
+  border-radius: 0px 20px 0px 20px;
+  margin: 5px;
+}
+
+.sosmed .sosmed-link i {
+  margin: 10px;
+}
+
+.sosmed .sosmed-link .whatsapp {
+  box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background: #25D366;
+}
+
+.sosmed .sosmed-link .telegram {
+  box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.50);
+  background-color: white;
+  color: #229ED9;
+}
+
+.sosmed .sosmed-link .linkedin {
+  box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.50);
+  background-color: #0e76a8;
+  color: #ffffff;
+}
+
+footer {
+  position: sticky;
+  background-color: #525252;
+}
+
+/* Penutup Contact CSS */
+
+
+
+@media screen and (min-width:576px) and (max-width:1440px) {
+  #about {
+    margin-top: -100px;
+  }
+
+  #project {
+    margin-top: -45px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .jumbotron .container {
+    display: block;
+    margin-top: -70px;
+    text-align: center;
+  }
+
+  .jumbotron img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .detailed-text {
+    padding-left: 0
+  }
+
+  .card {
+    text-align: center;
+    width: 10rem;
+  }
+
+  .card-body h5 {
+    font-size: 1rem;
+  }
+
+  .card-body p {
+    display: none;
+  }
+
+  .sosmed {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width:690px) {
+  .contact .container .row {
+    display: block;
+  }
+}
+
+@media screen and (max-width:575px) {
+
+  nav {
+    background-color: #383838e7;
+  }
+
+  .navbar {
+    margin-top: -28px;
+    height: 30px;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+  .jumbotron {
+    margin-top: 100px;
+  }
+
+  .nav-side {
+    visibility: visible;
+    right: 0;
+    position: fixed;
+    top: 30%;
+    transform: translate(0px, -45%);
+    height: 149px;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: -2px 5px 10px rgba(255, 255, 255, 0.6);
+    z-index: 1;
+
+  }
+
+  .nav-side ul {
+    list-style: none;
+    margin-left: -32px;
+
+  }
+
+  .nav-side ul li {
+    height: 50px;
+  }
+
+  .nav-side ul li a i {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+
+  .nav-side ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .nav-side ul li:nth-child(1) a {
+    background-color: #3b5998;
+    border-radius: 5px 0px 0px 0px;
+    border-bottom: 1px solid #fdfdfd;
+  }
+
+  .nav-side ul li:nth-child(2) a {
+    background-color: #1DA1F2;
+    border-bottom: 1px solid #fdfdfd;
+  }
+
+  .nav-side ul li:nth-child(3) a {
+    background: radial-gradient(circle at 30% 100%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 0px 0px 0px 5px;
+  }
+
+  .nav-side ul li label {
+    display: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .nav-bottom {
+    visibility: visible;
+  }
+
+  .nav-bottom .menu-nav {
+    height: 50px;
+    background-color: #162B32;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav-bottom .menu-nav ul {
+    list-style: none;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+
+  .nav-bottom .menu-nav ul li a {
+    color: #FF4838;
+    text-decoration: none;
+  }
+
+  .icon-nav {
+    font-size: 2rem;
+  }
+
+  .list-nav,
+  .link-nav {
+    display: flex;
+  }
+
+  .link-nav {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .list-nav {
+    justify-content: space-around;
+  }
+
+
+  .nav-bottom .menu-nav a {
+    text-decoration: none;
+  }
+
+  .active .link-nav i {
+    color: #f18408;
+  }
+
+  .active .link-nav span {
+    color: #f18408;
+  }
+
+  footer {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .card {
+    width: 8rem;
+  }
+
+  .contact {
+    width: 95%;
+  }
+
+  .contact .container {
+    width: 95%;
+  }
+}
