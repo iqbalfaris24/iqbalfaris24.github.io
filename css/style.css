@@ -1,8 +1,8 @@
 body {
-  background-image: url(../img/Background.png);
+  color: white;
+  background-image: url(../img/bg3.jpg);
   background-attachment: fixed;
   background-size: cover;
-  color: white;
 }
 
 /* Navbar CSS */
@@ -10,6 +10,8 @@ nav {
   width: auto;
   background-color: #162B32;
   height: 50px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
 }
 
@@ -88,17 +90,16 @@ nav {
   height: 2.3rem;
 }
 
-.nav-bottom {
-  visibility: hidden;
-}
-
+.nav-bottom,
 .nav-side {
   visibility: hidden;
 }
 
+
 /* penutup Navbar CSS */
 
 .jumbotron {
+
   margin-top: 20px;
 }
 
@@ -138,7 +139,7 @@ nav {
 
 /* Project CSS */
 .project {
-  background-color: #525252;
+  background-color: #626d71;
 }
 
 .project h1 {
@@ -147,9 +148,12 @@ nav {
 }
 
 .card {
-  color: #525252;
-  margin: 0px 10px 20px 10px;
+  background-color: #b38867;
+  color: #ffffff;
+  margin: 0px 20px 30px 20px;
   padding: 10px;
+  -webkit-box-shadow: 0px 0px 50px -6px #000000;
+  box-shadow: 0px 0px 50px -6px #000000;
 }
 
 .card p {
@@ -160,7 +164,8 @@ nav {
 
 /* Contact CSS */
 #contact {
-  background-color: #525252;
+  padding-top: 20px;
+  background-color: #626d71;
   align-items: center;
   padding-bottom: 100px;
 }
@@ -172,7 +177,9 @@ nav {
 }
 
 .contact {
-  background-color: #6b6b6b;
+  -webkit-box-shadow: 0px 0px 26px -4px #000000;
+  box-shadow: 0px 0px 26px -4px #000000;
+  background-color: #b38867;
   color: rgb(252, 252, 252);
   font-weight: bold;
   margin: 0 auto;
@@ -243,11 +250,11 @@ footer {
 
 @media screen and (min-width:576px) and (max-width:1440px) {
   #about {
-    margin-top: -100px;
+    margin-top: -140px;
   }
 
   #project {
-    margin-top: -45px;
+    margin-top: -70px;
   }
 }
 
