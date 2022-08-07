@@ -1,9 +1,6 @@
 html,
 body {
-  overflow-x: hidden
-}
-
-body {
+  overflow-x: hidden;
   color: white;
   background-image: url(../img/bg3.jpg);
   background-attachment: fixed;
@@ -12,58 +9,29 @@ body {
 
 /* Navbar CSS */
 nav {
-  width: auto;
-  background-color: #162B32;
   height: 50px;
+  width: 100%;
+  background-color: #162B32;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
+  z-index: 99;
 }
 
-.animate {
-  animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
+.navbar {
+  position: fixed;
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateY(1rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0rem);
-    opacity: 1;
-  }
-
-  0% {
-    transform: translateY(1rem);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: transform;
-    -webkit-opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    -webkit-opacity: 1;
-  }
-
-  0% {
-    -webkit-transform: translateY(1rem);
-    -webkit-opacity: 0;
-  }
-}
-
-.slideIn {
-  -webkit-animation-name: slideIn;
-  animation-name: slideIn;
+.dropdown-menu {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: none;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
 }
 
 #navbarNav ul li a {
@@ -75,6 +43,8 @@ nav {
 }
 
 .dropdown:hover .dropdown-menu {
+  max-height: 300px;
+  opacity: 1;
   display: block;
   margin-top: 0;
 }
@@ -84,14 +54,6 @@ nav {
   border-bottom: .3em solid;
 }
 
-.dropdown-menu {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  display: none;
-}
 
 #navbarNav .active {
   font-weight: bold;
