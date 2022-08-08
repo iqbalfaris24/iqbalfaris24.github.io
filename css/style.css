@@ -4,9 +4,11 @@ body {
   color: white;
   background-color: #525252;
   background-image: url(../img/bg3.jpg);
-  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
+
 
 /* Navbar CSS */
 nav {
@@ -15,7 +17,7 @@ nav {
 
 .navbar {
   height: 50px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
   background-color: #162B32;
   width: 100%;
   position: fixed;
@@ -28,17 +30,29 @@ nav {
   color: white;
 }
 
+.navbar-brand:hover {
+  color: #ffffff;
+  text-shadow: #000000 0px 0px 10px;
+}
+
 .dropdown-menu {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  display: none;
   max-height: 0;
   display: block;
   overflow: hidden;
   opacity: 0;
+}
+
+
+#navbarNav .active {
+  font-weight: bold;
+  text-shadow: 0px 3px 7px #ABABAB;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  height: 2.3rem;
 }
 
 .dropdown:hover {
@@ -58,18 +72,12 @@ nav {
 }
 
 #navbarNav ul li a {
-  color: rgb(255, 255, 255);
-}
-
-#navbarNav .active {
-  font-weight: bold;
-  text-shadow: 0px 3px 7px #ABABAB;
-  border-bottom: 3px solid rgb(255, 255, 255);
-  height: 2.3rem;
+  color: rgb(250, 250, 250);
 }
 
 .nav-bottom,
 .nav-side {
+  display: inline-block;
   visibility: hidden;
 }
 
@@ -77,17 +85,20 @@ nav {
 /* penutup Navbar CSS */
 
 .jumbotron {
-
-  margin-top: 60px;
+  margin-top: 40px;
+  height: 100vh;
+  display: flex;
 }
 
 .jumbotron .container {
   display: flex;
+  margin: auto;
+
 }
 
 .jumbotron img {
-  width: 350px;
-  height: 350px;
+  width: 20rem;
+  height: 20rem;
 }
 
 .detailed-text {
@@ -116,6 +127,7 @@ nav {
 /* Penutup Jumbotron CSS */
 
 /* Project CSS */
+
 .project {
   background-color: #626d71;
 }
@@ -224,15 +236,9 @@ footer {
 
 /* Penutup Contact CSS */
 
-
-
 @media screen and (min-width:576px) and (max-width:1440px) {
   #about {
-    margin-top: -140px;
-  }
-
-  #project {
-    margin-top: -70px;
+    margin-top: -80px;
   }
 }
 
@@ -245,7 +251,6 @@ footer {
 @media screen and (max-width:767px) {
   .jumbotron .container {
     display: block;
-    margin-top: -70px;
     text-align: center;
   }
 
@@ -300,8 +305,13 @@ footer {
     font-size: 1rem;
   }
 
-  .jumbotron {
-    margin-top: 120px;
+  /* 
+  #about {
+    margin-top: -50px;
+  } */
+
+  .jumbotron .container {
+    /* padding-top: 30px; */
   }
 
   .nav-side {
@@ -421,11 +431,13 @@ footer {
   .active .link-nav span {
     color: #f18408;
   }
-
-  footer {
-    margin-bottom: 50px;
-  }
 }
+
+
+footer {
+  margin-bottom: 50px;
+}
+
 
 @media screen and (max-width: 359px) {
   .card {
