@@ -472,6 +472,10 @@ footer a:hover {
     color: #B91234;
   }
 
+  .jumbotron {
+    margin-top: -30px;
+  }
+
   footer {
     margin-bottom: 50px;
   }
