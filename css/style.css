@@ -45,6 +45,27 @@ nav {
   display: block;
   overflow: hidden;
   opacity: 0;
+  border-bottom: 2px solid #B91234;
+}
+
+.dropdown-menu .ig:hover {
+  border-left: 2px solid #ffffff;
+  background-color: #6081c8;
+}
+
+.dropdown-menu .fb:hover {
+  border-left: 2px solid #ffffff;
+  background-color: #3067dd;
+}
+
+.dropdown-menu .twt:hover {
+  border-left: 2px solid #ffffff;
+  background-color: #00acee;
+}
+
+.dropdown-menu .gmail:hover {
+  border-left: 2px solid #ffffff;
+  background-color: #d44638;
 }
 
 
@@ -345,11 +366,13 @@ footer a:hover {
     background-color: #383838e7;
   }
 
+
   .navbar-brand {
     margin: auto;
     text-align: center;
     font-size: 1rem;
   }
+
 
   /* 
   #about {
@@ -480,7 +503,6 @@ footer a:hover {
     margin-bottom: 50px;
   }
 }
-
 
 @media screen and (max-width: 359px) {
   .card {
